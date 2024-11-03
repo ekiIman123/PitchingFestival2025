@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="public/css/marquee.css" />
     <link rel="stylesheet" href="public/css/scroll.css" />
     <link rel="stylesheet" href="public/css/swiper.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
     <style>
         .boxes {
             opacity: 0.08;
@@ -40,17 +44,13 @@
                     Festival</span>
             </a>
             <div class="flex md:order-2">
-                <!-- <a href="event.html#listEvent"
-                    class="px-5 py-3 mr-3 text-sm font-medium text-center text-black-700 bg-transparent border-2 border-blue-600 rounded-full transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-md hover:shadow-lg">
-                    Daftar
-                </a> -->
                 <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 17 14">
-                        <path stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
@@ -73,11 +73,11 @@
                     </li>
                     <li>
                         <a href="organizer.html"
-                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Organizer</a>
+                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Organizers</a>
                     </li>
                     <li>
                         <a href="contact.html"
-                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                            class="block py-2 pl-3 pr-4 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -98,613 +98,311 @@
     </div>
 
     <section class="px-5 mx-auto mt-10 sm:px-10 max-w-7xl" data-aos="fade-up">
-        <div class="z-20 flex w-full h-40 overflow-hidden sm:h-80 rounded-3xl">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="flex swiper-slide">
-                        <img src="public/img/Backdrop Audit.jpg" class="max-w-5xl m-auto" alt="">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48">
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="autoplay-progress">
-            <svg viewBox="0 0 48 48">
-                <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span></span>
-        </div>
-        </div>
-        <!--  -->
+        <div class="z-20 flex flex-col items-center w-full h-40 overflow-hidden sm:h-80 rounded-3xl">
+            <img src="public/img/backdrop new.png" class="max-w-5xl w-full h-full object-cover rounded-3xl"
+                alt="Backdrop Audit">
         </div>
     </section>
     <!-- Akhir section -->
 
     <!-- card list -->
-    <section class="mt-12" id="AgendaAcara">
-        <div class="absolute right-0 rounded-full opacity-25 h-80 w-80 bg-amber-200 blur-3xl -z-20"></div>
-
-        <div class="grid gap-8 px-4 py-8 mx-auto max-w-7xl lg:py-16 lg:grid-cols-2 lg:gap-16">
-            <div class="flex flex-col">
-                <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                    AGENDA EVENT</h1>
-                <p class="mb-8 text-lg font-normal leading-relaxed tracking-wide text-gray-800">
-                    Selamat Datang di Pitching Festival 2025! Acara ini adalah kesempatan luar biasa untuk menjelajahi
-                    inovasi teknologi terbaru,
-                    berpartisipasi dalam kompetisi yang seru, dan mengembangkan wawasan Anda. Berikut adalah agenda
-                    lengkap acara ini:</p>
-
-            </div>
-            <div data-aos-delay="100">
-                <div>
-                    <ul class="text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600"
-                        id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
-                        <li class="w-full">
-                            <button id="talk-tab" data-tabs-target="#talk" type="button" role="tab" aria-controls="talk"
-                                aria-selected="true"
-                                class="inline-block w-full h-full p-4 rounded-tl-lg transition duration-300 ease-in-out bg-gray-50 hover:bg-blue-600 hover:text-white focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                                Talk Show
-                            </button>
+    <div id="card" class="container mx-auto p-6">
+        <div class="flex flex-col sm:flex-row overflow-x-auto gap-8">
+            <!-- Kartu 1 -->
+            <div class="bg-blue-100 shadow-lg rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl max-w-xs w-full sm:w-72 md:w-80">
+                <div class="p-4 flex flex-col justify-center items-center bg-blue-500 text-white rounded-t-2xl">
+                    <h2 class="text-lg font-bold mb-2">Pitching SMA/SMK</h2>
+                    <p class="text-sm mb-3 text-center">
+                        Asah kompetensi bisnis kamu dengan mempresentasikan ide bisnis melalui pitch deck dan poster.
+                    </p>
+                </div>
+                <div class="p-4 flex flex-col items-center bg-gray-50 rounded-b-2xl">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Biaya Investasi</h5>
+                    <div class="text-center mb-4">
+                        <span class="text-xl font-semibold text-gray-900">Rp. 100.000</span>
+                        <span class="text-sm font-medium text-gray-500">/ Tim</span>
+                    </div>
+                    <ul class="space-y-2 mb-4 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <i class="text-blue-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta adalah siswa/i aktif dari sekolah yang sama</span>
                         </li>
-                        <li class="w-full">
-                            <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab"
-                                aria-controls="stats" aria-selected="false"
-                                class="inline-block w-full p-4 transition duration-300 ease-in-out bg-gray-50 hover:bg-blue-600 hover:text-white focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                                Pitching Competition Universitas
-                            </button>
+                        <li class="flex items-start">
+                            <i class="text-blue-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Satu tim terdiri dari 3 orang</span>
                         </li>
-                        <li class="w-full">
-                            <button id="about-tab" data-tabs-target="#about" type="button" role="tab"
-                                aria-controls="about" aria-selected="false"
-                                class="inline-block w-full p-4 transition duration-300 ease-in-out bg-gray-50 hover:bg-blue-600 hover:text-white focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                                Pitching Competition SMK/SMA
-                            </button>
+                        <li class="flex items-start">
+                            <i class="text-blue-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Setiap tim membawa satu guru pendamping</span>
                         </li>
-                        <li class="w-full">
-                            <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq"
-                                aria-selected="false"
-                                class="inline-block w-full h-full p-4 rounded-tr-lg transition duration-300 ease-in-out bg-gray-50 hover:bg-blue-600 hover:text-white focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">
-                                Event Techno Day
-                            </button>
+                        <li class="flex items-start">
+                            <i class="text-blue-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta wajib mengunggah Twibbon di Instagram dan tag instagram @pitchfest_trilogi</span>
                         </li>
                     </ul>
-
-                    <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600">
-                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="talk" role="tabpanel"
-                            aria-labelledby="talk-tab">
-                            <div class="flex flex-wrap">
-                                <div class="flex flex-wrap w-full h-full">
-                                    <div class="flex w-full">
-                                        <h1 class="mb-2 text-lg font-semibold">4 Januari 2024, Narasumber :</h1>
-                                    </div>
-                                    <ul role="list" class="space-y-2 text-gray-500">
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="text-sm leading-relaxed">
-                                                Andi W. Bachtiar, MSc. <br> (Vice Project Drilling and Development PT.
-                                                Pertamina EP)</span>
-                                        </li>
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="text-sm leading-relaxed">
-                                                Kemal Vivaveni <br> (Presenter & Penyiar Radio)</span>
-                                        </li>
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="text-sm leading-relaxed">
-                                                Teuku Wisnu <br> (Entrepreneur) </span>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-                                <div class="flex flex-wrap w-full h-full mt-4">
-                                    <h1 class="w-full mb-2 text-lg font-semibold ">5 Januari 2024, Narasumber :</h1>
-                                    <ul role="list" class="space-y-2 text-gray-500">
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="text-sm leading-relaxed">
-                                                Wulan Ayodya, S. E., M. M<br>(Penulis & Praktisi UMKM)</span>
-                                        </li>
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="text-sm leading-relaxed">
-                                                Alexander Ludi, MBA<br>(Head of loTs & Greentech)</span>
-                                        </li>
-                                        <li class="flex items-center space-x-2">
-                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
-                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor" viewBox="0 0 20 20">
-                                                <path
-                                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                                            </svg>
-                                            <span class="pb-3 text-sm leading-relaxed">
-                                                William, S. E<br>(Alumni Universitas Trilogi)</span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-
-                                <!-- Modal toggle -->
-                                <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                                    class="inline-flex items-center justify-center w-auto px-5 py-2.5 text-sm font-medium text-gray-900 bg-transparent border-2 border-blue-600 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg"
-                                    type="button">
-                                    Lihat Poster
-                                </button>
-
-                                <!-- gambar poster talkshow -->
-                                <!-- Main modal -->
-                                <div id="default-modal" tabindex="-1" aria-hidden="true"
-                                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                                    <div class="relative w-full max-w-2xl max-h-full p-4">
-                                        <!-- Modal content -->
-                                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                            <!-- Modal header -->
-                                            <div
-                                                class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
-                                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                                    Poster Talkshow Technososiopreneuran
-                                                </h3>
-                                                <button type="button"
-                                                    class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
-                                                    data-modal-hide="default-modal">
-                                                    <svg class="w-3 h-3" aria-hidden="true"
-                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 14 14">
-                                                        <path stroke="currentColor" stroke-linecap="round"
-                                                            stroke-linejoin="round" stroke-width="2"
-                                                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                                    </svg>
-                                                    <span class="sr-only">Close modal</span>
-                                                </button>
-                                            </div>
-                                            <!-- Modal body -->
-                                            <div class="p-4 space-y-4 md:p-5">
-                                                <img src="public/img/kampus.png">
-                                            </div>
-                                            <!-- Modal footer -->
-                                            <div
-                                                class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
-                                                <button data-modal-hide="default-modal" type="button"
-                                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End gambar poster talkshow -->
-
-                         <!-- Start Pitching Univ -->
-                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
-                            <h2 class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Rundown Kompetisi 4 Januari 2024:</h2>
-                            <!-- List -->
-                            <ul role="list" class="space-y-4 text-gray-500">
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Registrasi peserta, Sesi Pembukaan</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Sambutan oleh Rektor Universitas Trilogi</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Kompetisi Pitching Tingkat Universitas</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Penutupan</span>
-                                </li>
-                            </ul>
-                        
-                            <!-- Tombol Detail -->
-                            <button data-modal-target="defaultModalkampus" data-modal-toggle="defaultModalkampus"
-                                class="inline-flex items-center justify-center w-auto px-5 py-2.5 text-sm font-medium text-gray-900 bg-transparent border-2 border-blue-600 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg"
-                                type="button">
-                                Lihat Poster
-                            </button>
-                        </div>
-                        
-                        <!-- Modal for Pitching Competition Universitas -->
-                        <div id="defaultModalkampus" tabindex="-1" aria-hidden="true"
-                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative w-full max-w-2xl max-h-full p-4">
-                                <!-- Modal content -->
-                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <!-- Modal header -->
-                                    <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            Poster Kompetisi Pitching Universitas
-                                        </h3>
-                                        <button type="button"
-                                            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            data-modal-hide="defaultModalkampus">
-                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="p-4 space-y-4 md:p-5">
-                                        <img src="public/img/posteruniv.png" alt="Poster Pitching Universitas">
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
-                                        <button data-modal-hide="defaultModalkampus" type="button"
-                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                        <!-- End gambar pitching univ -->
-
-                        <!-- Modal for Pitching sma/k -->
-                        <div id="defaultModalkampus" tabindex="-1" aria-hidden="true"
-                            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative w-full max-w-2xl max-h-full">
-                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <img src="public/img/postersma.png" class="object-cover m-auto" alt="Poster Pitching Universitas" />
-                                </div>
-                            </div>
-                        </div>                        
-                        
-                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
-                            <h2 class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Rundown Kompetisi 5 Januari 2024:</h2>
-                            <!-- List -->
-                            <ul role="list" class="space-y-4 text-gray-500">
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Registrasi Ulang Peserta</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Pembukaan acara</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Perlombaan Pitching</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Pengumuman pemenang dan Penutupan</span>
-                                </li>
-                            </ul>
-                        
-                            <!-- Tombol Detail -->
-                            <button data-modal-target="defaultModalsmk" data-modal-toggle="defaultModalsmk"
-                                class="inline-flex items-center justify-center w-auto px-5 py-2.5 text-sm font-medium text-gray-900 bg-transparent border-2 border-blue-600 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg"
-                                type="button">
-                                Lihat Poster
-                            </button>
-                        </div>
-                        
-                        <!-- Modal for Pitching Competition SMK/SMA -->
-                        <div id="defaultModalsmk" tabindex="-1" aria-hidden="true"
-                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative w-full max-w-2xl max-h-full p-4">
-                                <!-- Modal content -->
-                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <!-- Modal header -->
-                                    <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            Poster Kompetisi Pitching SMK/SMA
-                                        </h3>
-                                        <button type="button"
-                                            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            data-modal-hide="defaultModalsmk">
-                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="p-4 space-y-4 md:p-5">
-                                        <img src="public/img/postersma.png" alt="Poster Pitching SMK/SMA">
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
-                                        <button data-modal-hide="defaultModalsmk" type="button"
-                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-
-                        <!-- End pitching SMA/K -->
-
-                        <!-- Start event techno -->
-                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="faq" role="tabpanel" aria-labelledby="about-tab">
-                            <h2 class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Rundown Event Techno Day 5 Januari 2024:</h2>
-                            <!-- List -->
-                            <ul role="list" class="space-y-4 text-gray-500">
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Batas Pendaftaran (20 Desember 2024)</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Technical Meeting (7 Januari 2025)</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                                    </svg>
-                                    <span class="leading-tight">Pelaksanaan Acara (10-11 Januari 2025)</span>
-                                </li>
-                            </ul>
-                        
-                            <!-- Tombol Detail -->
-                            <button data-modal-target="defaultModalTechnoDay" data-modal-toggle="defaultModalTechnoDay"
-                            class="inline-flex items-center justify-center w-auto px-5 py-2.5 text-sm font-medium text-gray-900 bg-transparent border-2 border-blue-600 rounded-lg transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg"
-                                type="button">
-                                Lihat Poster
-                            </button>
-                        </div>
-                        
-                        <!-- Modal for Event Techno Day -->
-                        <div id="defaultModalTechnoDay" tabindex="-1" aria-hidden="true"
-                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative w-full max-w-2xl max-h-full p-4">
-                                <!-- Modal content -->
-                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <!-- Modal header -->
-                                    <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            Poster Techno Day
-                                        </h3>
-                                        <button type="button"
-                                            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-                                            data-modal-hide="defaultModalTechnoDay">
-                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="p-4 space-y-4 md:p-5">
-                                        <img src="./public/img/techno.png" alt="Poster Techno Day">
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
-                                        <button data-modal-hide="defaultModalTechnoDay" type="button"
-                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                        <!-- end event techno -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- akhir list event -->
-
-    <!-- Section card pendaftaran -->
-    <section id="listEvent" class="py-16 px-8 font-poppins bg-gray-100">
-        <h3 class="font-bold text-3xl md:text-5xl text-center bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-400">
-            Event yang Kami Selenggarakan
-        </h3>
-    
-        <div class="container flex flex-col lg:flex-row justify-center mx-auto py-6 mt-8 gap-8">
-    
-            <!-- Kartu Event 1 -->
-            <div
-                class="w-full max-w-sm px-7 py-10 bg-white rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105 flex flex-col">
-                <h5 class="mb-6 text-2xl font-bold text-center text-blue-800 capitalize">Kompetisi Pitching SMA/SMK</h5>
-                <div class="flex items-baseline justify-center text-gray-900 mb-6">
-                    <span class="text-2xl font-semibold tracking-tight">Rp. 100.000</span>
-                    <span class="ml-1 text-md font-medium text-gray-700">/Tim</span>
-                </div>
-                <ul class="space-y-4 mb-20 flex-grow">
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Peserta adalah siswa aktif dari sekolah yang sama</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Satu tim terdiri dari 3 orang</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Setiap tim membawa satu guru pendamping</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Peserta wajib mengunggah Twibbon di Instagram</span>
-                    </li>
-                </ul>
-    
-                <div class="flex gap-3">
+                    <img src="public/img/postersma.png" alt="Poster Kompetisi Pitching SMA"
+                        class="w-32 h-auto rounded-lg cursor-pointer mb-4 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+                        data-modal-target="#sma-modal" data-modal-toggle="sma-modal">
                     <a href="https://linktr.ee/KompetisiPitchingSMAK"
-                        class="inline-flex items-center justify-center w-full px-5 py-3 font-semibold text-gray-900 bg-transparent border-2 border-blue-600 rounded-full transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg">
-                        Daftar & Info lanjut
+                        class="inline-flex items-center justify-center w-full px-4 py-2 font-semibold text-blue-700 bg-white border-2 border-blue-600 rounded-full transition-all duration-300">
+                        Daftar & Info Lanjut
                     </a>
-                </div>                
-            </div>
-    
-            <!-- Kartu Event 2 -->
-            <div
-                class="w-full max-w-sm px-7 py-10 bg-white rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105 flex flex-col">
-                <h5 class="mb-6 text-2xl font-bold text-center text-blue-800 capitalize">Kompetisi Pitching Universitas</h5>
-    
-                <div class="text-center mb-4">
-                    <span class="inline-block bg-red-500 text-white text-sm px-3 py-1 rounded-full font-semibold">
-                        Rp200.000/tim hingga 30 Nov 2024!
-                    </span>
                 </div>
-    
-                <div class="flex flex-col items-center mb-6">
-                    <div class="flex items-baseline text-gray-900 dark:text-gray-400">
-                        <span class="text-lg font-semibold">Rp</span>
-                        <span class="text-lg font-semibold">250.000</span>
-                        <span class="ml-1 text-md font-medium text-gray-700">/tim</span>
-                    </div>
-                </div>                         
-    
-                <ul class="space-y-4 mb-10 flex-grow">
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Peserta mahasiswa aktif dari universitas yang sama</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Satu tim terdiri dari 3 orang</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Wajib mengumpulkan pitchdeck dan prototype</span>
-                    </li>
-                    <li class="flex items-center space-x-2">
-                        <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                        <span class="text-sm font-medium text-gray-700">Wajib repost postingan di Instagram @pitchfest_trilogi</span>
-                    </li>
-                </ul>
-    
-                <div class="flex gap-3 mt-auto">
+            </div>            
+
+            <!-- Kartu 2 -->
+            <div class="bg-green-100 shadow-lg rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl max-w-xs w-full sm:w-72 md:w-80">
+                <div class="p-4 flex flex-col justify-center items-center bg-green-500 text-white rounded-t-2xl">
+                    <h2 class="text-lg font-bold mb-2">Pitching Universitas</h2>
+                    <p class="text-sm mb-3 text-center">
+                        Asah kompetensi bisnis kamu dengan mempresentasikan ide bisnis melalui pitch deck dan prototype.
+                    </p>
+                </div>
+                <div class="p-4 flex flex-col items-center bg-gray-50 rounded-b-2xl">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Biaya Investasi</h5>
+                    <div class="text-center mb-4">
+                        <span class="text-xl font-semibold text-gray-900 line-through">Rp. 250.000</span>
+                        <span class="text-sm font-medium text-gray-500">/ Tim</span>
+                        <div class="mt-2 text-red-500 font-bold text-sm">
+                            Harga Rp. 200.000 hingga 30 November 2024!
+                        </div>
+                    </div>                                      
+                    <ul class="space-y-2 mb-4 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <i class="text-green-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta adalah mahasiswa/i aktif dari universitas yang sama</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-green-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Satu tim terdiri dari 3 orang</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-green-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta wajib mengunggah Twibbon di Instagram dan tag instagram @pitchfest_trilogi</span>
+                        </li>
+                    </ul>
+                    <img src="public/img/posteruniv.png" alt="Poster Kompetisi Pitching Universitas"
+                        class="w-32 h-auto rounded-lg cursor-pointer mb-4 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+                        data-modal-target="#universitas-modal" data-modal-toggle="universitas-modal">
                     <a href="https://linktr.ee/KompetisiPitchingUniv2025"
-                        class="inline-flex items-center justify-center w-full px-5 py-3 font-semibold text-gray-900 bg-transparent border-2 border-blue-600 rounded-full transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg">
-                        Daftar & Info lanjut
+                        class="inline-flex items-center justify-center w-full px-4 py-2 font-semibold text-green-700 bg-white border-2 border-green-600 rounded-full transition-all duration-300">
+                        Daftar & Info Lanjut
                     </a>
-                </div>                
-            </div>
-    
-            <!-- Kartu Event 3 -->
+                </div>
+            </div>            
+
+            <!-- Kartu 3 -->
+            <div class="bg-yellow-100 shadow-lg rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl max-w-xs w-full sm:w-72 md:w-80">
+                <div class="p-4 flex flex-col justify-center items-center bg-yellow-500 text-white rounded-t-2xl">
+                    <h2 class="text-lg font-bold mb-2">Technoday</h2>
+                    <p class="text-sm mb-6 text-center">
+                        Menampilkan karya ide bisnis melalui pameran, bazar produk, dan jasa.
+                    </p>
+                </div>
+                <div class="p-4 flex flex-col items-center bg-gray-50 rounded-b-2xl">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2 mt-2">Biaya Investasi</h5>
+                    <div class="text-center mb-4">
+                        <span class="text-xl font-semibold text-gray-900">Rp. 200.000</span>
+                        <span class="text-sm font-medium text-gray-500">/ 2 Hari</span>
+                    </div>
+                    <ul class="space-y-2 mb-4 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <i class="text-yellow-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta wajib mengisi link registrasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-yellow-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta datang tepat waktu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-yellow-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta diwajibkan membayar biaya pendaftaran</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-yellow-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta akan mendapatkan fasilitas: meja, kursi, name desk, stop kontak, dan ID card peserta</span>
+                        </li>
+                    </ul>
+                    <img src="public/img/techno.png" alt="Poster Technoday 2025"
+                        class="w-32 h-auto rounded-lg cursor-pointer mb-4 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+                        data-modal-target="#technoday-modal" data-modal-toggle="technoday-modal">
+                    <a href="https://linktr.ee/TeknoDay.Bazar2025"
+                        class="inline-flex items-center justify-center w-full px-4 py-2 font-semibold text-yellow-700 bg-white border-2 border-yellow-800 rounded-full transition-all duration-300">
+                        Daftar & Info Lanjut
+                    </a>
+                </div>
+            </div>            
+
+            <!-- Kartu 4 -->
             <div
-            class="w-full max-w-sm px-7 py-10 bg-white rounded-2xl shadow-lg border border-gray-200 transition-transform transform hover:scale-105 flex flex-col">
-            <h5 class="mb-6 text-2xl font-bold text-center text-blue-800 capitalize">Event Techno Day</h5>
-            <div class="flex items-baseline justify-center text-gray-900 mb-6">
-                <span class="text-2xl font-semibold tracking-tight">Rp. 200.000</span>
-                <span class="ml-1 text-md font-medium text-gray-700">/2 Hari</span>
-            </div>
-            <ul class="space-y-4 mb-20 flex-grow">
-                <li class="flex items-center space-x-2">
-                    <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                    <span class="text-sm font-medium text-gray-700">Event Techno Day diikuti oleh peserta pitching, non kompetisi, dan umum</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                    <span class="text-sm font-medium text-gray-700">Setiap tim wajib membawa 5-10 orang supporter</span>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <i class="text-3xl text-blue-600 bi bi-check-circle"></i>
-                    <span class="text-sm font-medium text-gray-700">Fasilitas: meja, kursi, stopkontak, id card, dan namedesk</span>
-                </li>
-            </ul>
-
-            <div class="flex gap-3 mt-20">
-                <a href="https://linktr.ee/TeknoDay.Bazar2025"
-                    class="inline-flex items-center justify-center w-full px-5 py-3 font-semibold text-gray-900 bg-transparent border-2 border-blue-600 rounded-full transition-all duration-300 hover:bg-blue-600 hover:text-white shadow-lg hover:shadow-lg">
-                    Daftar & Info lanjut
-                </a>
-            </div>                
-        </div>       
-        </div>
-    </section>
-    
-    <!-- Akhir section card pendaftaran -->
-
-
-    <!-- modal box!! -->
-    <div id="defaultModalsmk" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative m-auto overflow-hidden bg-white rounded-lg shadow lg:w-10/12 dark:bg-gray-700">
-                <img src="public/img/smk.png" class="object-cover m-auto" alt="" />
+                class="bg-teal-100 shadow-lg rounded-2xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl max-w-xs w-full sm:w-72 md:w-80">
+                <div class="p-4 flex flex-col justify-center items-center bg-teal-500 text-white rounded-t-2xl">
+                    <h2 class="text-lg font-bold mb-2">Seminar</h2>
+                    <p class="text-sm mb-3 text-center">
+                        Acara seminar yang tidak kalah menarik dengan tema "TechSprout: Growing Together for Sustainable Business"
+                    </p>
+                </div>
+                <div class="p-4 flex flex-col items-center bg-gray-50 rounded-b-2xl">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Biaya Investasi</h5>
+                    <div class="text-center mb-4">
+                        <span class="text-xl font-semibold text-gray-900">Rp. 100.000</span>
+                        <!-- <span class="text-sm font-medium text-gray-500">/ Tim</span> -->
+                    </div>
+                    <ul class="space-y-2 mb-4 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <i class="text-teal-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta mengisi link registrasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-teal-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta diwajibkan membayar biaya pendaftaran</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-teal-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta diharapkan datang tepat waktu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="text-teal-500 bi bi-check-circle text-base mr-2"></i>
+                            <span>Peserta diharapkan menjaga sikap selama acara seminar berlangsung</span>
+                        </li>
+                    </ul>
+                    <img src="public/img/postersma.png" alt="Poster Talkshow"
+                        class="w-32 h-auto rounded-lg cursor-pointer mb-4 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+                        data-modal-target="talkshow-modal" data-modal-toggle="talkshow-modal">
+                    <a href="https://linktr.ee/TalkshowPitchingTrilogi2025"
+                        class="inline-flex items-center justify-center w-full px-4 py-2 font-semibold text-teal-100 bg-white border-2 border-blue-600 rounded-full transition-all duration-300">
+                        Daftar & Info Lanjut
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="defaultModalkampus" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative m-auto overflow-hidden bg-white rounded-lg shadow lg:w-10/12 dark:bg-gray-700">
-                <img src="public/img/kampus.png" class="object-cover m-auto" alt="" />
+
+    <!-- Modal untuk Pitching SMA -->
+    <div id="sma-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full p-4">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Poster Kompetisi Pitching SMA</h3>
+                    <button type="button"
+                        class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="sma-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4 md:p-5">
+                    <img src="public/img/postersma.png" alt="Poster Kompetisi Pitching SMA"
+                        class="w-full h-auto rounded-lg">
+                </div>
+                <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
+                    <button data-modal-hide="sma-modal" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Card end     -->
+
+    <!-- Modal untuk Pitching Universitas -->
+    <div id="universitas-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full p-4">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Poster Kompetisi Pitching
+                        Universitas</h3>
+                    <button type="button"
+                        class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="universitas-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4 md:p-5">
+                    <img src="public/img/posteruniv.png" alt="Poster Kompetisi Pitching Universitas"
+                        class="w-full h-auto rounded-lg">
+                </div>
+                <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
+                    <button data-modal-hide="universitas-modal" type="button"
+                        class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Tutup</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="defaultModalTechnoDay" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative w-full max-w-2xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg lg:w-10/12 m-auto shadow overflow-hidden dark:bg-gray-700">
-                <img src="public/img/technonew.png" class="object-cover m-auto" alt="">
+    <!-- Modal untuk Technoday -->
+    <div id="technoday-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full p-4">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Poster Technoday</h3>
+                    <button type="button"
+                        class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="technoday-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4 md:p-5">
+                    <img src="public/img/techno.png" alt="Poster Technoday" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
+                    <button data-modal-hide="technoday-modal" type="button"
+                        class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Tutup</button>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- end modal box!! -->
 
-    <!-- Akhir Section card pendaftaran -->
+    <!-- Modal untuk Talkshow -->
+    <div id="talkshow-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full p-4">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Poster Talkshow</h3>
+                    <button type="button"
+                        class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="talkshow-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4 md:p-5">
+                    <img src="public/img/talkshownew.png" alt="Poster Talkshow" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600">
+                    <button data-modal-hide="talkshow-modal" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Section card list -->
 
     <!-- Section jadwal tabel -->
     <section id="tabeljadwal" class="px-4">
+        <h2 class="text-2xl font-bold text-center my-8">Jadwal Acara Pitching</h2>
         <div class="container mx-auto">
             <div class="relative overflow-x-auto border border-blue-600 rounded-lg shadow-md">
                 <table class="w-full text-sm text-left text-gray-800">
@@ -721,7 +419,8 @@
                     </thead>
                     <tbody class="bg-gray-100">
                         <tr class="border-b hover:bg-gray-200 transition duration-300">
-                            <th scope="row" class="px-4 py-4 font-semibold text-gray-900">Kompetisi pitching tingkat SMA/SMK</th>
+                            <th scope="row" class="px-4 py-4 font-semibold text-gray-900">Kompetisi pitching tingkat
+                                SMA/SMK</th>
                             <td class="px-6 py-4">12 Desember 2024</td>
                             <td class="px-6 py-4">16 Desember 2024</td>
                             <td class="px-6 py-4">17 Desember 2024 - 29 Desember 2024</td>
@@ -730,7 +429,8 @@
                             <td class="px-6 py-4">11 Januari 2025</td>
                         </tr>
                         <tr class="border-b hover:bg-gray-200 transition duration-300">
-                            <th scope="row" class="px-4 py-4 font-semibold text-gray-900">Kompetisi pitching tingkat Universitas</th>
+                            <th scope="row" class="px-4 py-4 font-semibold text-gray-900">Kompetisi pitching tingkat
+                                Universitas</th>
                             <td class="px-6 py-4">12 Desember 2024</td>
                             <td class="px-6 py-4">16 Desember 2024</td>
                             <td class="px-6 py-4">17 Desember 2024 - 29 Desember 2024</td>
@@ -760,20 +460,15 @@
                 </table>
             </div>
         </div>
-        <div class="mt-16"></div>
+        <div></div>
     </section>
 
     <!-- Section maps -->
     <section id="lokasi" class="px-4 mb-20">
         <h2 class="text-2xl font-bold text-center my-8">Lokasi Acara</h2>
         <div class="w-full h-96 mb-4">
-            <iframe 
-                src="https://www.google.com/maps?q=Universitas+Trilogi&hl=id&z=16&output=embed"
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
+            <iframe src="https://www.google.com/maps?q=Universitas+Trilogi&hl=id&z=16&output=embed" width="100%"
+                height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
@@ -782,15 +477,9 @@
             Jl. TMP. Kalibata No.1, RT.4/RW.04, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan,<br>
             Daerah Khusus Ibukota Jakarta 12760
         </p>
-    </section>     
+    </section>
     <!-- akhir maps -->
     <!-- Akhir section -->
-    <style>
-        .mt-16 {
-            margin-bottom: 250px;
-            /* Jarak dengan footer */
-        }
-    </style>
 
     <!-- footer -->
     <footer class="bg-gray-500 text-white py-12 mt-24">
@@ -804,13 +493,13 @@
                     <!-- <li><a href="organizer.html" class="hover:underline">Organizer</a></li> -->
                 </ul>
             </div>
-           
+
             <div>
                 <h2 class="mb-4 font-semibold text-lg">Event</h2>
                 <ul class="space-y-2">
-                    <li><a href="event.html#AgendaAcara" class="hover:underline">Event Pitching</a></li>
-                    <li><a href="event.html#listEvent" class="hover:underline">Registration</a></li>
+                    <li><a href="event.html#card" class="hover:underline">Registration</a></li>
                     <li><a href="event.html#tabeljadwal" class="hover:underline">Rundown Pitching</a></li>
+                    <li><a href="event.html#lokasi" class="hover:underline">Location</a></li>
                 </ul>
             </div>
             <div>
@@ -868,7 +557,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         const progressCircle = document.querySelector(".autoplay-progress svg");
         const progressContent = document.querySelector(".autoplay-progress span");
         var swiper = new Swiper(".mySwiper", {
@@ -893,7 +582,7 @@
                 },
             },
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
